@@ -1,14 +1,14 @@
 class NegativeTitlesError(Exception):
-    def __init__(self):
-        self.message = "Titles cannot be negative."
+    def __init__(self, message):
+        self.message = message
 
 
 class InvalidYearCupError(Exception):
-    def __init__(self):
-        self.message = "There was no World Cup this year."
+    def __init__(self, message):
+        self.message = message
 
 
 class ImpossibleTitlesError(Exception):
-    def __init__(self):
-        self.message = "Impossible to have more titles than disputed cups."
+    def __init__(self, message):
+        self.message = message
 

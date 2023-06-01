@@ -8,6 +8,5 @@ class Team(models.Model):
     fifa_code = models.CharField(max_length=3, unique=True)
     first_cup = models.DateField(blank=True, null=True)
 
-
-def __repr__(self):
-    return f"<[{self.pk}] {self.name} - {self.fifa_code}>"
+    def __repr__(self) -> str:
+        return f"<[{self.pk}] {self.name} - {self.fifa_code}>"
